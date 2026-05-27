@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ABRIR LINKS EN OTRA PESTAÑA -->
+  <base target="_blank">
+
+  <title>Mi Linktree</title>
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background-image: url("..//IMG/IMG.jpg");
+      background-size: cover;
+      background-position: center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:420px;
+      text-align:center;
+      backdrop-filter: blur(10px);
+      background: rgba(53, 53, 53, 0.35);
+      padding:30px;
+      border-radius:25px;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    /* FOTO PERFIL */
+    .profile img{
+      width:130px;
+      height:130px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid white;
+      box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h1{
+      margin-top:18px;
+      font-size:42px;
+      color:#9AC00F;
+    }
+
+    .description{
+      margin-top:10px;
+      font-size:18px;
+      color:#ffffff;
+      line-height:1.5;
+      padding:0 10px;
+    }
+
+    /* REDES */
+    .socials{
+      display:flex;
+      justify-content:center;
+      gap:28px;
+      margin:30px 0;
+      flex-wrap:wrap;
+    }
+
+    .socials a{
+      color:#ffffff;
+      font-size:38px;
+      transition:0.3s;
+    }
+
+    .socials a:hover{
+      transform:scale(1.15);
+      color:#9AC00F;
+    }
+
+    /* BOTONES */
+    .links{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .link-card{
+      background:#63458B;
+      padding:22px;
+      border-radius:18px;
+      text-decoration:none;
+      color:#ffffff;
+      display:flex;
+      align-items:center;
+      gap:18px;
+      font-size:20px;
+      font-weight:bold;
+      transition:0.3s;
+      box-shadow:0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .link-card:hover{
+      transform:translateY(-4px);
+      background:#7d5ca8;
+    }
+
+    .link-card i{
+      font-size:34px;
+      width:40px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:500px){
+
+      h1{
+        font-size:34px;
+      }
+
+      .description{
+        font-size:16px;
+      }
+
+      .link-card{
+        font-size:18px;
+        padding:18px;
+      }
+
+      .socials a{
+        font-size:34px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- PERFIL -->
+    <div class="profile">
+      <img src="../IMG/LOGO.jpeg" alt="Foto Perfil">
+    </div>
+
+    <h1>Tal Como Soy</h1>
+
+    <p class="description">
+      ¡Holaa! ✨<br>
+      Aquí podrás encontrar todas nuetras redes sociales y contenido.
+    </p>
+
+    <!-- REDES -->
+    <div class="socials">
+
+      <!-- INSTAGRAM -->
+      <a href="https://www.instagram.com/tal_como.soy?igsh=a2h0M3N1eHJ3cjQw">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <!-- FACEBOOK -->
+      <a href="https://www.facebook.com/share/1BKzb48vez/">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <!-- TIKTOK -->
+      <a href="https://www.tiktok.com/@tal_como.soy?_r=1&_t=ZS-96gQtqGwfzw">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+
+    </div>
+
+    <!-- BOTONES -->
+    <div class="links">
+
+      <a href="https://www.instagram.com/tal_como.soy?igsh=a2h0M3N1eHJ3cjQw" class="link-card">
+        <i class="fa-brands fa-instagram"></i>
+        Instagram Oficial
+      </a>
+
+      <a href="https://www.facebook.com/share/1BKzb48vez/" class="link-card">
+        <i class="fa-brands fa-facebook"></i>
+        Facebook Oficial
+      </a>
+
+      <a href="https://www.tiktok.com/@tal_como.soy?_r=1&_t=ZS-96gQtqGwfzw" class="link-card">
+        <i class="fa-brands fa-tiktok"></i>
+        TikTok Oficial
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
